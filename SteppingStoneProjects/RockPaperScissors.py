@@ -39,9 +39,9 @@ else:
 
 computer_choice = random.randint(0,2)
 
-row1 = ["draws","️wins","️loses"]
-row2 = ["loses","draws","️wins"]
-row3 = ["️wins","loses️","draws"]
+row1 = ["draws","wins","loses"]
+row2 = ["loses","draws","wins"]
+row3 = ["wins","loses","draws"]
 map = [row1, row2, row3]
 
 #1 - Rock, 2 - Paper, 3- scissors
