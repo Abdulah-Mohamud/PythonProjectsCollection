@@ -1,20 +1,17 @@
-import random
-word_list = ["aardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
+import time
 
-print(f'Pssst, the solution is {chosen_word}.')
+# name = input("What is your name?")
+# print("Hello " + name)
+# time.sleep(1)
+# print("Let's find when you'll die!!")
 
-display = []
-word_length = len(chosen_word)
-for _ in range(word_length):
-    display += "_"
+import sys
+from time import sleep
 
-guess = input("Guess a letter: ").lower()
+def typing_function():
+ words = "This is just a test :P"
+ for char in words:
+    sleep(0.2)
+    sys.stdout.write(char)]
 
-for position in range(word_length):
-    letter = chosen_word[position]
-    #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
-    if letter == guess:
-        display[position] = letter
-
-print(display)
+typing_function()
