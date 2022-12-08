@@ -7,15 +7,23 @@ print(f'Pssst, the solution is {chosen_word}.')
 display = []
 word_length = len(chosen_word)
 for _ in range(word_length):
-    display += "_"
+ display += "_"
 print(display)
+lives = 6
+game_over = False
+while not game_over:
+    guess = input("Guess a letter: ").lower()
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+    if letter != guess:
+        lives -= 1
+    print(f"You have {lives} remaining")
 
-guess = input("Guess a letter: ").lower()
+    print(display)
 
-for position in range(word_length):
-    letter = chosen_word[position]
-    #print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
-    if letter == guess:
-        display[position] = letter
-
-print(display)
+    if "_" not in display:
+        game_over = True
+        chosen_word2 = ''.join(display)
+        print(f"Player Won, the final work was {chosen_word2}")
