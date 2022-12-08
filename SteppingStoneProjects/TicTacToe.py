@@ -15,8 +15,8 @@ selected_row[horizontal - 1] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
 
-leaveLoop = false
-turn = 'X'
+#leaveLoop = false
+#turn = 'X'
 
-while(leaveLoop== False):
+#while(leaveLoop== False):
 
