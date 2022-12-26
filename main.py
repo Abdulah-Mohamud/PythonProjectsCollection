@@ -19,6 +19,7 @@ def format_name(f_name , l_name):
     print(f"Hello, {f_name} {l_name}")
 
 
+
 first = input("Whats is your first name?")
 last = input("Whats is your last name?")
 format_name(f_name=first , l_name=last)
