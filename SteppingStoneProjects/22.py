@@ -7,7 +7,6 @@ class Card:
         self.suit = suit
         self.value = value
 
-
     def __repr__(self):
         # Return a string representation of the card
         return f"{self.value} of {self.suit}"
