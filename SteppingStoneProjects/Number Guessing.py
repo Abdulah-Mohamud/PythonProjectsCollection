@@ -28,6 +28,7 @@ def guess(lives):
         if lives_left == 0:
             game_over = True
             print("You ran out lives, you lost the game")
+
 guess(lives)
 play_on = input("Would you like to play again? 'y' or 'n'?")
 
