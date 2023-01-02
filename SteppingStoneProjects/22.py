@@ -11,7 +11,6 @@ class Card:
         # Return a string representation of the card
         return f"{self.value} of {self.suit}"
 
-
 # Deck class to represent the deck of cards
 class Deck:
     def __init__(self):
