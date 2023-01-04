@@ -9,7 +9,6 @@ if difficulty == "easy":
 else:
     lives = 5
 
-
 def game(lives):
     computer_guess = random.randint(1, 101)
     print(f"the number is {computer_guess}")
