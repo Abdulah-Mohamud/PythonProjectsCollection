@@ -2,13 +2,14 @@ import random
 
 print("Welcome to the guessing game")
 print("I'm thinking of a number between 1 and 100")
-difficulty = input("Choose a difficulty between easy and hard?:")
 
-if difficulty == "easy":
-    lives = 10
-else:
-    lives = 5
 
+def mode():
+    difficulty = input("Choose a difficulty between easy and hard?:")
+    if difficulty == "easy":
+        return 10
+    else:
+        return 5
 
 def game(lives):
     computer_guess = random.randint(1, 101)
@@ -31,11 +32,16 @@ def game(lives):
             game_over = True
             print("You ran out lives, you lost the game")
 
+def playAgain():
+    play_on = input("Would you like to play again? 'y' or 'n'?")
 
+    if play_on == "y":
+        lives = mode()
+        game(lives)
+        playAgain()
+    else:
+        print("Thank you for playing")
+
+lives = mode()
 game(lives)
-play_on = input("Would you like to play again? 'y' or 'n'?")
-
-if play_on == "y":
-    game(lives)
-else:
-    print("Thank you for playing")
+playAgain()
