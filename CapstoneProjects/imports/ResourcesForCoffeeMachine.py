@@ -24,9 +24,27 @@ MENU = {
     }
 }
 
+money_box = 0
 resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
 }
+machine_status = True
+
+while machine_status:
+    command = input("What would you like? (espresso/latte/cappuccino): ").lower()
+
+    if command == "off":
+        machine_status = False
+
+    elif command == "report":
+        print(f"Water is {resources['water']}ml")
+        print(f"Milk is {resources['milk']}ml")
+        print(f"Coffee is {resources['coffee']}ml")
+        print(f"Profit is £{money_box}")
+
+    else:
+        drink = MENU[command]
+
 
