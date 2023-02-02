@@ -32,6 +32,7 @@ resources = {
 }
 machine_status = True
 
+
 while machine_status:
     command = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
