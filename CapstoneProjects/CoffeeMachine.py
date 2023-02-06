@@ -1,4 +1,5 @@
 from CapstoneProjects.resources.ResourcesForCoffeeMachine import MENU, resources
+from prettytable import PrettyTable
 
 profit = 0
 
@@ -46,9 +47,10 @@ def restock(resources):
     addition_water = int(input("How much water would you like to add? (ml)"))
     addition_coffee = int(input("How much coffee would you like to add? (g)"))
 
-    restock_quantity = [addition_water, addition_milk, addition_coffee]
+    restock_quantity = {addition_water, addition_milk, addition_coffee}
     for item in restock_quantity:
-        resources[item] -= restock_quantity[item]
+        resources[item] += restock_quantity[item]
+        print(resources)
 
 
 is_on = True
@@ -58,6 +60,13 @@ while is_on:
     if choice == "off":
         is_on = False
     elif choice == "report":
+
+        # Using Pretty table to show report
+        #table = PrettyTable()
+        #table.add_column("Resources", ["Water", "Milk", "Coffee"])
+        #table.add_column(resources['water'], resources['milk'], resources['coffee'])
+        #print(table)
+
         print(f"Water: {resources['water']}ml")
         print(f"Milk: {resources['milk']}ml")
         print(f"Coffee: {resources['coffee']}g")
