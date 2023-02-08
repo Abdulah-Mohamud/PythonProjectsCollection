@@ -24,5 +24,3 @@ while is_on:
             print("Restarted")
 
 
-
-
