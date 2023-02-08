@@ -22,5 +22,3 @@ while is_on:
             my_coffee_machine.make_coffee(drink)
         else:
             print("Restarted")
-
-
