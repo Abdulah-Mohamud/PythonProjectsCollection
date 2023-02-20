@@ -3,7 +3,9 @@ class QuizBrain:
         self.question_number = 0
         self.question_list = q_bank
 
-    def 
+    def next_question(self):
+        current_question = self.question_list[self.question_number]
+        input(f"{current_question}, True or False?")
 
 
 
