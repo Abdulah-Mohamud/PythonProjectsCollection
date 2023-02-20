@@ -5,7 +5,5 @@ class QuizBrain:
 
     def next_question(self):
         current_question = self.question_list[self.question_number]
-        input(f"{current_question}, True or False?")
-
-
-
+        self.question_number += 1
+        input(f"{self.question_number}: {current_question}, True or False? ")
