@@ -15,3 +15,5 @@ table.add_column("Coffee", [18, 24, 24])
 print(table)
 
 
+
+

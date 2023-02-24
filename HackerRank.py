@@ -1,3 +1,11 @@
+
+
+t = divmod(int(input()), int(input()))
+print(t[0])
+print(t[1])
+print(t)
+
+
 for i in range(1, int(input())+1):
     print((10**i//9)**2)
 
@@ -11,8 +19,3 @@ for i in range(1, n + 1):
             print(n - j, end="")
     else:
         print(i, end="")
-
-t = divmod(input(), input())
-print(t[0])
-print(t[1])
-print(t)
