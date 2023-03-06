@@ -9,6 +9,7 @@ screen.title("My Snake Game")
 screen.tracer(0)
 
 
+
 snake = Snake()
 #food = Food()
 
